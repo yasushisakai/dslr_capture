@@ -1,0 +1,33 @@
+dslr-capture captures the preview image from your camera and displays it.
+
+how to use:
+it depends on gphoto2 and sdl2.
+
+mac:
+brew install gphoto2 sdl2 sdl2-image
+
+other OS platforms have better support using different solutions, see below.
+
+compatible cameras:
+
+you can find hope if the below list contains your camera model and has
+'Liveview' and/or 'Image Capture' in the Additional Abilities row.
+
+http://gphoto.org/proj/libgphoto2/support.php
+
+I've only tested it using a Sony-α7s.
+
+expected usage:
+I made this to feed it to obs. There were similar solutions like Camera
+Live(https://github.com/v002/v002-Camera-Live) and Cascable Pro
+Webcam(https://cascable.se/) but neither did not work with my combination of
+devices. MacOS and Sony.
+
+If you are a Linux user, gphotos manual (http://gphoto.org/doc/remote/) works.
+If you are a Windows user, sony provides its own software to capture camera
+preview.
+
+Once being able to feed to obs, obs can create a virtual camera, which you
+can use it with zoom and other web conference systems.
+
+next steps: skip obs and directly populate a virtual camera device. (more into macOS)
