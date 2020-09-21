@@ -8,6 +8,7 @@ edition = "2018"
 
 [dependencies]
 gphoto={git="https://github.com/yasushisakai/gphoto-rs"}
+image="0.23.9"
 
 [dependencies.sdl2]
 version = "0.34"

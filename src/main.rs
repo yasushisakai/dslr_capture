@@ -16,7 +16,8 @@ pub fn run() -> Result<(), String> {
 
     let mut cam = Camera::new();
     let model = cam.get_model();
-    let window = video_subsystem.window(&model, 1024, 680) //FIXME: image size is hard coded
+    let (width, height) = cam.get_size();
+    let window = video_subsystem.window(&model, width, height) //FIXME: image size is hard coded
       .position_centered()
       .build()
       .map_err(|e| e.to_string())?;
@@ -39,7 +40,7 @@ pub fn run() -> Result<(), String> {
             }
         }
 
-       sleep(Duration::new(0, 1_000_000_000u32/30)); // nap time
+       sleep(Duration::new(0, 1_000_000_000u32/24)); // nap time
 
     }
 
